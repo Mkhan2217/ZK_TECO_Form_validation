@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./task3.css">
+</head>
+<body>
+    <h1>TASK_3 :- form validation </h1>
+    <form action="./submitted.html"  >
+        <!-- <h2>Please fill proper detials for your Registration</h2> -->
+        <label for="FirstName">FirstName</label><br>
+        <input id="fname"    type="text" placeholder="Enter your firstName" name="firstName" required> <br>
+        <span id="fnameRR" style="color: red;" ></span><br>
+
+        <label for="lastName">LastName</label><br>
+        <input id="lname"  type="text" placeholder="Enter your lastName" name="lastName" required> <br>
+        <span id="lnameRR" style="color: red;" ></span><br>
+        
+        <div>
+            <label for="gender">Gender</label><br>
+        <input type="radio" name="gender" value="male"  checked>Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="Others">Others
+        </div><br>
+
+
+        <label  for="email">EmailAddress</label><br>
+        <input id="email" type="text" placeholder="Enter your emailAddress" name="emailAddress" required> <br>
+        <span id="emailRR" style="color: red;" ></span><br>
+       
+        <label for="contact">Contact Number</label><br>
+        <input id="contact" type="text" placeholder="Contact Number" name="contactNumber" required> <br>
+        <span id="contactRR" style="color: red;" ></span><br>
+
+
+        <label for="password">Password</label><br>
+        <input id="password" type="password" placeholder="please enter your password" name="password" required > <br>
+        <span id="passwordRR" style="color: red;" ></span><br>
+
+        <input class="clr" type="reset" ><br><br>
+        <input class="clr" type="submit" onclick="formvali()"  >
+    
+    </form> 
+    
+    <script src="./task3.js"></script>
+</body>
+</html>
